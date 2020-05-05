@@ -2,8 +2,14 @@ iinlets = 1;
 outlets = 1;
 
 var grainStart;
+var grainLength;
 var grainEnd;
-var GrainSpeed;
+var grainSpeed;
+var variability;
+var boidPX;
+var boidPY;
+var boidPZ;
+var varRange = 10.0;
 
 
 var myval=0;
@@ -34,11 +40,21 @@ function msg_float(v)
 }
 
 function list()
-{
+{ 
 	var a = arrayfromargs(arguments);
+	//("recieved list:" + a + "\n")
 	grainStart = a[0];
-	grainEnd = grainStart + a[1];
+	grainLength = a[1];
 	grainSpeed = a[2];
+	variability = a[3];
+	boidPX = a[8];
+	boidPY = a[9];
+	boidPZ = a[10];
+
+	grainStart += ((boidPX / 5.0) * variability * varRange);
+	grainLength = grainLength + ((boidPY / 5.0) * variability * varRange);
+	grainSpeed = grainSpeed + ((boidPZ / 5.0) * variability * varRange);
+	grainEnd = grainStart + grainLength;
 	bang();
 }
 
