@@ -9,7 +9,7 @@ var variability;
 var boidPX;
 var boidPY;
 var boidPZ;
-var varRange = 10.0;
+var varRange = 30.0;
 
 
 var myval=0;
@@ -51,9 +51,9 @@ function list()
 	boidPY = a[9];
 	boidPZ = a[10];
 
-	grainStart += ((boidPX / 5.0) * variability * varRange);
-	grainLength = grainLength + ((boidPY / 5.0) * variability * varRange);
-	grainSpeed = grainSpeed + ((boidPZ / 5.0) * variability * varRange);
+	grainStart += (boidPX * variability * varRange);
+	grainLength = grainLength + (boidPY * variability * varRange);
+	grainSpeed = grainSpeed + (boidPZ * variability * varRange);
 	grainEnd = grainStart + grainLength;
 	bang();
 }
