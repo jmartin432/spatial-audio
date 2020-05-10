@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2479.0, 120.0, 1029.0, 924.0 ],
+		"rect" : [ 1890.0, 79.0, 1029.0, 924.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -177,7 +177,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 921.0, 424.0, 50.0, 22.0 ]
+					"patching_rect" : [ 835.0, 265.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -190,7 +190,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 744.0, 424.0, 50.0, 22.0 ]
+					"patching_rect" : [ 658.0, 265.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -257,13 +257,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-38",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 579.666666666666515, 853.0, 50.0, 35.0 ],
-					"text" : "0 0 0 0 0 0 0 0"
+					"patching_rect" : [ 579.666666666666515, 853.0, 50.0, 22.0 ],
+					"text" : "0 0 0 0"
 				}
 
 			}
@@ -295,13 +294,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-26",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 527.499999999999886, 853.0, 50.0, 35.0 ],
-					"text" : "1 1 1 1 1 1 1 1"
+					"patching_rect" : [ 527.499999999999886, 853.0, 50.0, 22.0 ],
+					"text" : "1 1 1 1"
 				}
 
 			}
@@ -387,7 +385,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 806.0, 424.0, 51.0, 22.0 ],
+					"patching_rect" : [ 720.0, 265.0, 51.0, 22.0 ],
 					"text" : "sig~ 10."
 				}
 
@@ -402,7 +400,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 806.0, 265.0, 20.0, 140.0 ],
+					"patching_rect" : [ 720.0, 87.5, 19.0, 169.0 ],
 					"size" : 90.0
 				}
 
@@ -414,7 +412,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 866.0, 424.0, 44.0, 22.0 ],
+					"patching_rect" : [ 780.0, 265.0, 44.0, 22.0 ],
 					"text" : "sig~ 1."
 				}
 
@@ -559,7 +557,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 164.0, 732.0, 50.0, 22.0 ]
+					"patching_rect" : [ 164.0, 732.0, 69.75, 22.0 ]
 				}
 
 			}
@@ -630,7 +628,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 175.5, 304.0, 91.0, 22.0 ],
-					"text" : "poem1.wav"
+					"text" : "birds.wav"
 				}
 
 			}
@@ -814,7 +812,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 866.0, 265.0, 16.0, 140.0 ],
+					"patching_rect" : [ 780.0, 87.5, 17.0, 169.0 ],
 					"size" : 1.9
 				}
 
