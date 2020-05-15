@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2245.0, 110.0, 818.0, 712.0 ],
+		"rect" : [ 2051.0, 111.0, 1144.0, 909.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "jit_matrix", "" ],
+					"patching_rect" : [ 478.0, 548.0, 206.0, 22.0 ],
+					"text" : "jit.matrix #1-relPosition 3 float32 16 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-43",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 254.0, 534.0, 190.0, 22.0 ],
+					"patching_rect" : [ 267.0, 548.0, 190.0, 22.0 ],
 					"text" : "jit.matrix #1-velocity 3 float32 16 1"
 				}
 
@@ -55,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 248.0, 107.0, 78.0, 22.0 ],
+					"patching_rect" : [ 261.0, 121.0, 78.0, 22.0 ],
 					"text" : "s #0-move"
 				}
 
@@ -177,7 +189,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 50.0, 263.0, 111.0, 22.0 ],
+					"patching_rect" : [ 63.0, 277.0, 111.0, 22.0 ],
 					"text" : "jit.gen @title signer"
 				}
 
@@ -189,7 +201,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.0, 569.0, 73.0, 22.0 ],
+					"patching_rect" : [ 84.0, 583.0, 73.0, 22.0 ],
 					"text" : "r #0-color"
 				}
 
@@ -201,7 +213,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 71.0, 603.0, 85.0, 22.0 ],
+					"patching_rect" : [ 84.0, 617.0, 85.0, 22.0 ],
 					"text" : "color $1 $2 $3"
 				}
 
@@ -212,7 +224,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 140.0, 107.0, 75.0, 22.0 ],
+					"patching_rect" : [ 153.0, 121.0, 75.0, 22.0 ],
 					"text" : "s #0-color"
 				}
 
@@ -223,7 +235,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 62.25, 107.0, 83.0, 22.0 ],
+					"patching_rect" : [ 75.25, 121.0, 83.0, 22.0 ],
 					"text" : "s #0-param"
 				}
 
@@ -235,7 +247,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 6,
 					"outlettype" : [ "", "", "", "", "", "" ],
-					"patching_rect" : [ 13.0, 69.0, 259.0, 22.0 ],
+					"patching_rect" : [ 26.0, 83.0, 259.0, 22.0 ],
 					"text" : "route swarm-metro parameter color move reset"
 				}
 
@@ -249,7 +261,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 13.0, 22.0, 30.0, 30.0 ]
+					"patching_rect" : [ 26.0, 36.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -260,7 +272,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 65.0, 462.0, 81.0, 22.0 ],
+					"patching_rect" : [ 78.0, 476.0, 81.0, 22.0 ],
 					"text" : "r #0-param"
 				}
 
@@ -273,7 +285,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 200.5, 170.0, 24.0, 24.0 ]
+					"patching_rect" : [ 213.5, 184.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -432,7 +444,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 270.0, 289.0, 149.0, 22.0 ],
+					"patching_rect" : [ 283.0, 303.0, 149.0, 22.0 ],
 					"text" : "jit.gen @title signer_scaler"
 				}
 
@@ -445,7 +457,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 200.5, 224.0, 24.0, 24.0 ]
+					"patching_rect" : [ 213.5, 238.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -456,7 +468,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 50.0, 655.0, 502.0, 22.0 ],
+					"patching_rect" : [ 63.0, 669.0, 502.0, 22.0 ],
 					"text" : "jit.gl.mesh swarm-world @draw_mode points @point_size 2 @color 1. 1. 1. 1 @scale 5. 5. 5."
 				}
 
@@ -468,7 +480,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 200.5, 257.0, 32.0, 22.0 ],
+					"patching_rect" : [ 213.5, 271.0, 32.0, 22.0 ],
 					"text" : "t b b"
 				}
 
@@ -480,7 +492,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 270.0, 217.0, 58.0, 22.0 ],
+					"patching_rect" : [ 283.0, 231.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -492,7 +504,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 270.0, 257.0, 125.0, 22.0 ],
+					"patching_rect" : [ 283.0, 271.0, 125.0, 22.0 ],
 					"text" : "jit.noise 3 float32 17 1"
 				}
 
@@ -504,7 +516,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 50.0, 186.0, 58.0, 22.0 ],
+					"patching_rect" : [ 63.0, 200.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -516,7 +528,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 50.0, 231.0, 119.0, 22.0 ],
+					"patching_rect" : [ 63.0, 245.0, 119.0, 22.0 ],
 					"text" : "jit.noise 3 float32 1 1"
 				}
 
@@ -528,7 +540,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 50.0, 534.0, 191.0, 22.0 ],
+					"patching_rect" : [ 63.0, 548.0, 191.0, 22.0 ],
 					"text" : "jit.matrix #1-position 3 float32 16 1"
 				}
 
@@ -538,8 +550,8 @@
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "jit_matrix", "jit_matrix", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "jit_matrix", "jit_matrix", "jit_matrix", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
@@ -579,6 +591,17 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 866.0, 515.0, 35.0, 22.0 ],
+									"text" : "out 3"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-21",
 									"maxclass" : "newobj",
@@ -751,22 +774,22 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 863.0, 525.0, 35.0, 22.0 ],
+									"patching_rect" : [ 442.0, 515.0, 35.0, 22.0 ],
 									"text" : "out 2"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"code" : "position = in1;\r\nvelocity = in2;\r\n\r\navoidVelocity = vec(0,0,0);\r\navoidSum = vec(0,0,0);\r\navoidCount = 0;\r\ncenterOfMass = vec(cX, cY, cZ);\r\ncomVelocity = vec(0,0,0);\r\n\t\r\n\r\nfor (i=0; i<dim.x; i+=1) {\r\n\totherPosition = samplepix(in1, vec(i, 0));\r\n\tdistance = length(position - otherPosition);\r\n\t\r\n\tif((distance > 0) && (distance < avoidRadius)){\r\n\t\tdifference = position - otherPosition;\r\n\t\tdifference = normalize(difference);\r\n\t\t\t//difference /= distance;\r\n\t\t\r\n\t\tavoidSum += difference;\r\n\t\tavoidCount += 1;\r\n\t}\r\n}\r\nif (avoidCount > 0){\r\n\tavoidAverage = avoidSum / avoidCount;\r\n\tavoidVelocity = avoidAverage - velocity;\r\n\tavoidVelocity = normalize(avoidVelocity);\r\n}\r\n\r\ncomVelocity = centerOfMass - position;\r\ncomVelocity = normalize(comVelocity);\r\n\r\nnewVelocity = comWeight * comVelocity + avoidWeight * avoidVelocity;\r\nnewVelocity = normalize(newVelocity);\r\nacceleration = newVelocity - velocity;\r\n\r\nacceleration /= accelScale;\r\nvelocity += acceleration;\r\nvelocity = normalize(velocity) / 100;\t\r\n\r\nif ((position.x + velocity.x >= 1.) || (position.x + velocity.x <= -1.)){\r\n\tvelocity = vec(-1. * velocity.x, velocity.y, velocity.z);\r\n}\r\nif ((position.y + velocity.y >= 1) || (position.y + velocity.y <= -1.)){\r\n\tvelocity = vec(velocity.x, -1. * velocity.y, velocity.z);\r\n}\t\r\nif ((position.z + velocity.z >= 1) || (position.z + velocity.z <= -1.)){\r\n\tvelocity = vec(velocity.x, velocity.y, -1. * velocity.z);\r\n}\r\n\r\nposition += velocity;\t\r\n\r\nif (!D3) {\r\n\tout1 = position.xy;\r\n\tout2 = velocity.xy;\r\n} else {\r\n\tout1 = position;\r\n\tout2 = velocity;\r\n}",
+									"code" : "position = in1;\r\nvelocity = in2;\r\n\r\navoidVelocity = vec(0,0,0);\r\navoidSum = vec(0,0,0);\r\navoidCount = 0;\r\ncenterOfMass = vec(cX, cY, cZ);\r\ncomVelocity = vec(0,0,0);\r\n\t\r\n\r\nfor (i=0; i<dim.x; i+=1) {\r\n\totherPosition = samplepix(in1, vec(i, 0));\r\n\tdistance = length(position - otherPosition);\r\n\t\r\n\tif((distance > 0) && (distance < avoidRadius)){\r\n\t\tdifference = position - otherPosition;\r\n\t\tdifference = normalize(difference);\r\n\t\t\t//difference /= distance;\r\n\t\t\r\n\t\tavoidSum += difference;\r\n\t\tavoidCount += 1;\r\n\t}\r\n}\r\nif (avoidCount > 0){\r\n\tavoidAverage = avoidSum / avoidCount;\r\n\tavoidVelocity = avoidAverage - velocity;\r\n\tavoidVelocity = normalize(avoidVelocity);\r\n}\r\n\r\ncomVelocity = centerOfMass - position;\r\ncomVelocity = normalize(comVelocity);\r\n\r\nnewVelocity = comWeight * comVelocity + avoidWeight * avoidVelocity;\r\nnewVelocity = normalize(newVelocity);\r\nacceleration = newVelocity - velocity;\r\n\r\nacceleration /= accelScale;\r\nvelocity += acceleration;\r\nvelocity = normalize(velocity) / 100;\t\r\n\r\nif ((position.x + velocity.x >= 1.) || (position.x + velocity.x <= -1.)){\r\n\tvelocity = vec(-1. * velocity.x, velocity.y, velocity.z);\r\n}\r\nif ((position.y + velocity.y >= 1) || (position.y + velocity.y <= -1.)){\r\n\tvelocity = vec(velocity.x, -1. * velocity.y, velocity.z);\r\n}\t\r\nif ((position.z + velocity.z >= 1) || (position.z + velocity.z <= -1.)){\r\n\tvelocity = vec(velocity.x, velocity.y, -1. * velocity.z);\r\n}\r\n\r\nposition += velocity;\r\nrelPosition = position - centerOfMass;\t\r\n\r\nif (!D3) {\r\n\tout1 = position.xy;\r\n\tout2 = velocity.xy;\r\n\tout3 = relPosition.xy;\r\n} else {\r\n\tout1 = position;\r\n\tout2 = velocity;\r\n\tout3 = relPosition;\r\n}",
 									"fontface" : 0,
 									"fontname" : "<Monospaced>",
 									"fontsize" : 12.0,
 									"id" : "obj-13",
 									"maxclass" : "codebox",
 									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 21.0, 57.0, 861.000000000000114, 442.0 ]
 								}
 
@@ -838,6 +861,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"source" : [ "obj-13", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"source" : [ "obj-13", 1 ]
 								}
@@ -860,7 +890,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 50.0, 500.0, 281.0, 22.0 ],
+					"patching_rect" : [ 63.0, 514.0, 281.0, 22.0 ],
 					"text" : "jit.gen @title boids_swarm_algo @precision float32"
 				}
 
@@ -872,7 +902,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 270.0, 424.0, 190.0, 22.0 ],
+					"patching_rect" : [ 283.0, 438.0, 190.0, 22.0 ],
 					"text" : "jit.matrix #1-velocity 3 float32 16 1"
 				}
 
@@ -884,7 +914,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 50.0, 434.0, 191.0, 22.0 ],
+					"patching_rect" : [ 63.0, 448.0, 191.0, 22.0 ],
 					"text" : "jit.matrix #1-position 3 float32 16 1"
 				}
 
@@ -915,6 +945,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-14", 2 ]
 				}
 
 			}

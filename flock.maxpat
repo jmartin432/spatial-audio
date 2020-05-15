@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1902.0, 105.0, 1029.0, 924.0 ],
+		"rect" : [ 1524.0, 90.0, 1029.0, 924.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -642,8 +642,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 244.5, 419.0, 88.0, 22.0 ],
-					"text" : "s #0-clipEnd"
+					"patching_rect" : [ 244.5, 419.0, 75.0, 22.0 ],
+					"text" : "s #1-clipEnd"
 				}
 
 			}
@@ -653,8 +653,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 95.0, 419.0, 92.0, 22.0 ],
-					"text" : "s #0-clipStart"
+					"patching_rect" : [ 95.0, 419.0, 79.0, 22.0 ],
+					"text" : "s #1-clipStart"
 				}
 
 			}
@@ -749,7 +749,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 175.5, 304.0, 91.0, 22.0 ],
-					"text" : "piano.wav"
+					"text" : "poem1.wav"
 				}
 
 			}
@@ -1037,7 +1037,7 @@
 			}
 , 			{
 				"box" : 				{
-					"buffername" : "2-clip",
+					"buffername" : "1-clip",
 					"id" : "obj-99",
 					"maxclass" : "waveform~",
 					"numinlets" : 5,

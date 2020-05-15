@@ -43,7 +43,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 242.0, 205.0, 77.0, 22.0 ],
+					"patching_rect" : [ 194.5, 128.799997210502625, 77.0, 22.0 ],
 					"text" : "swarm-world"
 				}
 
@@ -287,13 +287,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"parameterbanks" : 			{
-
-			}
-
-		}
-,
 		"dependency_cache" : [ 			{
 				"name" : "flock.maxpat",
 				"bootpath" : "~/Projects/spatial-audio",
