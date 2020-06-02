@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1560.0, 93.0, 931.0, 864.0 ],
+		"rect" : [ 2325.0, 79.0, 956.0, 953.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,32 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 911.0, 857.0, 47.0, 22.0 ],
+					"text" : "*~ 0.07"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 911.0, 407.0, 47.0, 22.0 ],
+					"text" : "*~ 0.07"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
@@ -45,7 +70,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.0, 708.0, 30.0, 30.0 ]
+					"patching_rect" : [ 911.0, 892.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -57,7 +82,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 27.0, 350.0, 30.0, 30.0 ]
+					"patching_rect" : [ 911.0, 440.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -74,10 +99,12 @@
 					"maxclass" : "bpatcher",
 					"name" : "swarm.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 27.0, 397.0, 903.0, 300.0 ],
+					"outlettype" : [ "", "signal" ],
+					"patching_rect" : [ 21.0, 485.0, 905.0, 337.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 485.0, 906.0, 342.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -95,10 +122,12 @@
 					"maxclass" : "bpatcher",
 					"name" : "swarm.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 27.0, 36.0, 903.0, 299.0 ],
+					"outlettype" : [ "", "signal" ],
+					"patching_rect" : [ 19.0, 34.0, 907.0, 346.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 41.0, 907.0, 346.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -115,9 +144,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "swarm.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "", "signal" ],
 					"patching_rect" : [ 108.0, 173.0, 11.0, 10.0 ],
 					"viewvisibility" : 1
 				}
@@ -126,14 +155,42 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-23", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 1 ],
 					"source" : [ "obj-23", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-9", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -169,9 +226,9 @@
 , 			{
 				"name" : "Default M4L",
 				"default" : 				{
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -180,9 +237,9 @@
 , 			{
 				"name" : "Default M4L Poletti",
 				"default" : 				{
+					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ],
 					"fontsize" : [ 10.0 ],
-					"fontname" : [ "Arial Bold" ],
-					"patchlinecolor" : [ 0.290196, 0.309804, 0.301961, 0.85 ]
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
@@ -191,8 +248,6 @@
 , 			{
 				"name" : "Default M4L-1",
 				"default" : 				{
-					"fontsize" : [ 11.0 ],
-					"fontname" : [ "Arial" ],
 					"fontface" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -202,7 +257,9 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-
+,
+					"fontsize" : [ 11.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
@@ -228,13 +285,13 @@
 , 			{
 				"name" : "blueYellowSlider",
 				"default" : 				{
-					"accentcolor" : [ 1.0, 0.788235, 0.301961, 1.0 ],
 					"color" : [ 1.0, 0.788235, 0.301961, 1.0 ],
-					"elementcolor" : [ 0.020779, 0.0, 0.307692, 1.0 ],
 					"fontface" : [ 1 ],
+					"bgcolor" : [ 0.027632, 0.0, 0.307692, 1.0 ],
+					"accentcolor" : [ 1.0, 0.788235, 0.301961, 1.0 ],
+					"elementcolor" : [ 0.020779, 0.0, 0.307692, 1.0 ],
 					"selectioncolor" : [ 1.0, 0.788235, 0.301961, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 0.788235, 0.301961, 1.0 ],
-					"bgcolor" : [ 0.027632, 0.0, 0.307692, 1.0 ]
+					"textcolor_inverse" : [ 1.0, 0.788235, 0.301961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -243,8 +300,6 @@
 , 			{
 				"name" : "jbb",
 				"default" : 				{
-					"fontsize" : [ 9.0 ],
-					"fontname" : [ "Arial" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -253,7 +308,9 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-
+,
+					"fontsize" : [ 9.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
@@ -298,12 +355,12 @@
 , 			{
 				"name" : "orangeBlue",
 				"default" : 				{
-					"accentcolor" : [ 1.0, 0.376471, 0.305882, 1.0 ],
 					"color" : [ 0.027451, 0.0, 0.305882, 1.0 ],
+					"bgcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ],
+					"accentcolor" : [ 1.0, 0.376471, 0.305882, 1.0 ],
 					"elementcolor" : [ 1.0, 0.376471, 0.305882, 1.0 ],
 					"selectioncolor" : [ 1.0, 0.788235, 0.301961, 1.0 ],
-					"textcolor_inverse" : [ 1.0, 0.376471, 0.305882, 1.0 ],
-					"bgcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ]
+					"textcolor_inverse" : [ 1.0, 0.376471, 0.305882, 1.0 ]
 				}
 ,
 				"parentstyle" : "blueYellowSlider",
@@ -312,8 +369,8 @@
 , 			{
 				"name" : "orangeBlue-1",
 				"default" : 				{
-					"accentcolor" : [ 1.0, 0.376471, 0.305882, 1.0 ],
 					"color" : [ 1.0, 0.376938, 0.307692, 1.0 ],
+					"accentcolor" : [ 1.0, 0.376471, 0.305882, 1.0 ],
 					"selectioncolor" : [ 1.0, 0.376471, 0.305882, 1.0 ],
 					"textcolor_inverse" : [ 1.0, 0.376471, 0.305882, 1.0 ]
 				}
@@ -335,8 +392,8 @@
 				"name" : "orangeBlueMeter",
 				"default" : 				{
 					"color" : [ 1.0, 0.376471, 0.305882, 1.0 ],
-					"elementcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ],
-					"bgcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ]
+					"bgcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ],
+					"elementcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ]
 				}
 ,
 				"parentstyle" : "orangeBlue2",
@@ -351,8 +408,8 @@
 				"name" : "orangeBlueSlider",
 				"default" : 				{
 					"color" : [ 1.0, 0.376471, 0.305882, 1.0 ],
-					"elementcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ],
-					"bgcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ]
+					"bgcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ],
+					"elementcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ]
 				}
 ,
 				"parentstyle" : "orangeBlue2",
@@ -362,8 +419,8 @@
 				"name" : "orangeBlueTog",
 				"default" : 				{
 					"color" : [ 1.0, 0.376471, 0.305882, 1.0 ],
-					"elementcolor" : [ 0.490196, 0.0, 0.309804, 1.0 ],
-					"bgcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ]
+					"bgcolor" : [ 0.027451, 0.0, 0.305882, 1.0 ],
+					"elementcolor" : [ 0.490196, 0.0, 0.309804, 1.0 ]
 				}
 ,
 				"parentstyle" : "orangeBlue-1",
@@ -373,9 +430,9 @@
 				"name" : "shittyStyle",
 				"default" : 				{
 					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
+					"bgcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
 					"elementcolor" : [ 0.871412, 0.955014, 0.629622, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.078431, 0.321569, 1.0 ],
-					"bgcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+					"textcolor_inverse" : [ 0.0, 0.078431, 0.321569, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
