@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1483.0, 164.0, 346.0, 306.0 ],
+		"rect" : [ 1546.0, 163.0, 346.0, 306.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-3",
@@ -54,7 +55,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
+					"outlettype" : [ "multichannelsignal", "multichannelsignal" ],
 					"patching_rect" : [ 163.5, 59.0, 77.0, 22.0 ],
 					"text" : "swarm-synth"
 				}
@@ -176,158 +177,55 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-3::obj-25::obj-58" : [ "live.toggle[27]", "live.toggle", 0 ],
-			"obj-3::obj-57::obj-6::obj-3" : [ "live.text[3]", "live.text", 0 ],
-			"obj-3::obj-25::obj-56" : [ "live.toggle[29]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-85" : [ "live.toggle[22]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-83" : [ "live.toggle[24]", "live.toggle", 0 ],
-			"obj-3::obj-5::obj-42" : [ "live.drop[2]", "live.drop", 0 ],
-			"obj-3::obj-25::obj-26" : [ "live.toggle[47]", "live.toggle", 0 ],
-			"obj-3::obj-5::obj-34" : [ "live.text[13]", "live.text", 0 ],
-			"obj-3::obj-25::obj-139" : [ "live.toggle[18]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-22" : [ "live.toggle[30]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-14" : [ "live.dial[3]", "scale", 0 ],
+			"obj-3::obj-25::obj-2" : [ "live.toggle[14]", "live.toggle", 0 ],
+			"obj-3::obj-57::obj-62" : [ "live.text[12]", "live.text[9]", 0 ],
+			"obj-3::obj-25::obj-26" : [ "live.toggle[46]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-14" : [ "live.dial[2]", "scale", 0 ],
+			"obj-3::obj-25::obj-85" : [ "live.toggle[15]", "live.toggle", 0 ],
 			"obj-3::obj-95" : [ "live.toggle[48]", "live.toggle[2]", 0 ],
+			"obj-3::obj-57::obj-6::obj-6" : [ "live.text[1]", "live.text", 0 ],
+			"obj-3::obj-25::obj-83" : [ "live.toggle[13]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-139" : [ "live.toggle[4]", "live.toggle", 0 ],
+			"obj-3::obj-5::obj-42" : [ "live.drop", "live.drop", 0 ],
+			"obj-3::obj-25::obj-56" : [ "live.toggle[44]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-10" : [ "live.menu[2]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-81" : [ "live.toggle[9]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-52" : [ "live.toggle[43]", "live.toggle", 0 ],
+			"obj-3::obj-57::obj-6::obj-3" : [ "live.text", "live.text", 0 ],
+			"obj-3::obj-25::obj-36::obj-62" : [ "live.text[2]", "live.text[9]", 0 ],
+			"obj-3::obj-25::obj-102" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-3::obj-1" : [ "live.gain~[2]", "live.gain~[1]", 0 ],
-			"obj-3::obj-25::obj-29" : [ "live.toggle[21]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-81" : [ "live.toggle[17]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-52" : [ "live.toggle[26]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-54" : [ "live.toggle[28]", "live.toggle", 0 ],
-			"obj-3::obj-57::obj-58" : [ "live.text[5]", "live.text[9]", 0 ],
-			"obj-3::obj-25::obj-131" : [ "live.toggle[31]", "live.toggle", 0 ],
-			"obj-3::obj-57::obj-62" : [ "live.text[6]", "live.text[9]", 0 ],
-			"obj-3::obj-5::obj-43" : [ "live.drop[3]", "live.drop", 0 ],
-			"obj-3::obj-25::obj-67" : [ "live.toggle[25]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-82" : [ "live.toggle[20]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-102" : [ "live.toggle[19]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-2" : [ "live.toggle[16]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-11" : [ "live.toggle[23]", "live.toggle", 0 ],
-			"obj-3::obj-57::obj-6::obj-6" : [ "live.text[4]", "live.text", 0 ],
-			"obj-3::obj-25::obj-10" : [ "live.menu[3]", "live.toggle", 0 ],
-			"obj-3::obj-25::obj-36::obj-62" : [ "live.text[14]", "live.text[9]", 0 ],
+			"obj-3::obj-25::obj-67" : [ "live.toggle[7]", "live.toggle", 0 ],
+			"obj-3::obj-5::obj-34" : [ "live.text[24]", "live.text", 0 ],
+			"obj-3::obj-25::obj-29" : [ "live.toggle[8]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-131" : [ "live.toggle[3]", "live.toggle", 0 ],
+			"obj-3::obj-57::obj-58" : [ "live.text[10]", "live.text[9]", 0 ],
+			"obj-3::obj-25::obj-58" : [ "live.toggle[45]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-82" : [ "live.toggle[12]", "live.toggle", 0 ],
+			"obj-3::obj-5::obj-43" : [ "live.drop[1]", "live.drop", 0 ],
+			"obj-3::obj-25::obj-22" : [ "live.toggle[5]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-11" : [ "live.toggle[11]", "live.toggle", 0 ],
+			"obj-3::obj-25::obj-54" : [ "live.toggle[10]", "live.toggle", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
-				"obj-3::obj-25::obj-58" : 				{
-					"parameter_longname" : "live.toggle[27]"
-				}
-,
-				"obj-3::obj-57::obj-6::obj-3" : 				{
-					"parameter_longname" : "live.text[3]"
-				}
-,
-				"obj-3::obj-25::obj-56" : 				{
-					"parameter_longname" : "live.toggle[29]"
-				}
-,
-				"obj-3::obj-25::obj-85" : 				{
-					"parameter_longname" : "live.toggle[22]"
-				}
-,
-				"obj-3::obj-25::obj-83" : 				{
-					"parameter_longname" : "live.toggle[24]"
-				}
-,
-				"obj-3::obj-5::obj-42" : 				{
-					"parameter_longname" : "live.drop[2]"
-				}
-,
-				"obj-3::obj-25::obj-26" : 				{
-					"parameter_longname" : "live.toggle[47]"
-				}
-,
-				"obj-3::obj-5::obj-34" : 				{
-					"parameter_longname" : "live.text[13]"
-				}
-,
-				"obj-3::obj-25::obj-139" : 				{
-					"parameter_longname" : "live.toggle[18]"
-				}
-,
-				"obj-3::obj-25::obj-22" : 				{
-					"parameter_longname" : "live.toggle[30]"
-				}
-,
-				"obj-3::obj-25::obj-14" : 				{
-					"parameter_longname" : "live.dial[3]"
-				}
-,
 				"obj-3::obj-95" : 				{
 					"parameter_longname" : "live.toggle[48]"
+				}
+,
+				"obj-3::obj-25::obj-36::obj-62" : 				{
+					"parameter_longname" : "live.text[2]"
 				}
 ,
 				"obj-3::obj-1" : 				{
 					"parameter_longname" : "live.gain~[2]"
 				}
-,
-				"obj-3::obj-25::obj-29" : 				{
-					"parameter_longname" : "live.toggle[21]"
-				}
-,
-				"obj-3::obj-25::obj-81" : 				{
-					"parameter_longname" : "live.toggle[17]"
-				}
-,
-				"obj-3::obj-25::obj-52" : 				{
-					"parameter_longname" : "live.toggle[26]"
-				}
-,
-				"obj-3::obj-25::obj-54" : 				{
-					"parameter_longname" : "live.toggle[28]"
-				}
-,
-				"obj-3::obj-57::obj-58" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
-,
-				"obj-3::obj-25::obj-131" : 				{
-					"parameter_longname" : "live.toggle[31]"
-				}
-,
-				"obj-3::obj-57::obj-62" : 				{
-					"parameter_longname" : "live.text[6]"
-				}
-,
-				"obj-3::obj-5::obj-43" : 				{
-					"parameter_longname" : "live.drop[3]"
-				}
-,
-				"obj-3::obj-25::obj-67" : 				{
-					"parameter_longname" : "live.toggle[25]"
-				}
-,
-				"obj-3::obj-25::obj-82" : 				{
-					"parameter_longname" : "live.toggle[20]"
-				}
-,
-				"obj-3::obj-25::obj-102" : 				{
-					"parameter_longname" : "live.toggle[19]"
-				}
-,
-				"obj-3::obj-25::obj-2" : 				{
-					"parameter_longname" : "live.toggle[16]"
-				}
-,
-				"obj-3::obj-25::obj-11" : 				{
-					"parameter_longname" : "live.toggle[23]"
-				}
-,
-				"obj-3::obj-57::obj-6::obj-6" : 				{
-					"parameter_longname" : "live.text[4]"
-				}
-,
-				"obj-3::obj-25::obj-10" : 				{
-					"parameter_longname" : "live.menu[3]"
-				}
-,
-				"obj-3::obj-25::obj-36::obj-62" : 				{
-					"parameter_longname" : "live.text[14]"
-				}
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -374,48 +272,52 @@
 			}
 , 			{
 				"name" : "spat5.dsp.control.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"bootpath" : "~/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"bootpath" : "~/Projects/spatial-audio",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.dsp.mute.bypass.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"bootpath" : "~/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.presets.management.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"bootpath" : "~/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.window.management.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"bootpath" : "~/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.colorpicker.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/spat5/patchers",
-				"patcherrelativepath" : "../../Documents/Max 8/Packages/spat5/patchers",
+				"bootpath" : "~/Max 8/Packages/spat5/patchers",
+				"patcherrelativepath" : "../../Max 8/Packages/spat5/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "spat5.spat~.mxo",
-				"type" : "iLaX"
+				"name" : "room-control.maxpat",
+				"bootpath" : "~/Projects/spatial-audio",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "spat5.osc.route.mxo",
@@ -438,7 +340,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "spat5.viewer.embedded.mxo",
+				"name" : "spat5.spat~.mxo",
 				"type" : "iLaX"
 			}
  ],
